@@ -1,3 +1,7 @@
+#header {
+    background-color: #9C9C9C;
+}
+
 #create-program-image {
     margin-left: 170px;
 }
@@ -6,9 +10,38 @@
     margin-bottom: 170px;
 }
 
+#second-row {
+    margin-bottom: 130px;
+}
+
+#third-row {
+    margin-bottom: 130px;
+}
+
 #update-program-content {
     margin-left: 100px;
     margin-bottom: 75px;
+}
+
+#docflow-footer {
+    color: #013765;
+    font-size: 14px;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    position: fixed;
+    bottom:0;
+    background: #9C9C9C;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+#footer-text {
+    line-height: 3rem;
+}
+
+.navbar-brand {
+    color: #013765;
 }
 
 .landing-btns {
@@ -28,7 +61,11 @@
     background-position: center center;
     width: 100%;
     height: 350px;
-    margin-bottom: 75px;
+    margin-bottom: 100px;
+}
+
+.docflow-footer-section {
+    margin-top: 100px;
 }
 
 
