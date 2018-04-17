@@ -4,6 +4,7 @@
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
+  <link rel="icon" href="assets/images/dhs-logo.png" type="image/gif">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>DocFlow</title>
 
@@ -22,10 +23,10 @@
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<body onload="getCopyrightDate();">
+    <nav id="header" class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#">DocFlow</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       
@@ -53,26 +54,78 @@
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <input class="form-control mr-sm-2" type="dropdown" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
-        </div>
+        </div> -->
       </nav>
-      <div class="jumbotron">
-          <h1 class="display-4">Hello, world!</h1>
-          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-          <hr class="my-4">
-          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-          <p class="lead">
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-          </p>
+      <div class="jumbotron jumbotron-fluid">
+          <img id="background-img" src="assets/images/dhs-logo.png" alt="Smiley face" height="280" width="280">
+      </div>
+      <div class="container landing">
+          <div id="first-row" class="row">
+            <div class="col-sm-12 col-md-6">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor rutrum felis, 
+                vitae vulputate ex euismod in. Duis ut mi erat. Mauris nec libero a enim hendrerit condimentum. 
+                Phasellus suscipit placerat orci, vitae malesuada ligula dignissim sit amet. Praesent luctus consequat gravida. 
+                Mauris volutpat, ante at porttitor dapibus, odio erat sagittis metus, et molestie velit metus a elit. Vestibulum 
+                vestibulum lacinia bibendum. Morbi libero quam, commodo vel dictum non, vulputate sit amet diam.
+              </p>
+              <button id="create-program-btn" class="btn btn-primary landing-btns" type="submit">Create Program</button>
+            </div>
+            <div id="create-program-image" class="col-sm-12 col-md-4">
+              <img src="assets/images/add.png" alt="Smiley face" height="200" width="200">
+            </div>
+          </div>
+          <div id="second-row" class="row">
+            <div class="col-sm-12 col-md-4">
+              <img src="assets/images/edit.png" alt="Smiley face" height="180" width="180">
+            </div>
+            <div id="update-program-content" class="col-sm-12 col-md-6">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor rutrum felis, 
+                vitae vulputate ex euismod in. Duis ut mi erat. Mauris nec libero a enim hendrerit condimentum. 
+                Phasellus suscipit placerat orci, vitae malesuada ligula dignissim sit amet. Praesent luctus consequat gravida. 
+                Mauris volutpat, ante at porttitor dapibus, odio erat sagittis metus, et molestie velit metus a elit. Vestibulum 
+                vestibulum lacinia bibendum. Morbi libero quam, commodo vel dictum non, vulputate sit amet diam.
+              </p>
+              <button id="update-program-btn" class="btn btn-primary landing-btns" type="submit">Update Program</button>
+            </div>
+          </div>
+          <div id="third-row" class="row">
+              <div class="col-sm-12 col-md-6">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor rutrum felis, 
+                  vitae vulputate ex euismod in. Duis ut mi erat. Mauris nec libero a enim hendrerit condimentum. 
+                  Phasellus suscipit placerat orci, vitae malesuada ligula dignissim sit amet. Praesent luctus consequat gravida. 
+                  Mauris volutpat, ante at porttitor dapibus, odio erat sagittis metus, et molestie velit metus a elit. Vestibulum 
+                  vestibulum lacinia bibendum. Morbi libero quam, commodo vel dictum non, vulputate sit amet diam.
+                </p>
+                <button id="create-program-btn" class="btn btn-primary landing-btns" type="submit">View Program</button>
+              </div>
+              <div id="create-program-image" class="col-sm-12 col-md-4">
+                <img src="assets/images/view.png" alt="Smiley face" height="180" width="180">
+              </div>
+            </div>
+      </div>
+      <div class="container">
+        <div class="row">
+
         </div>
+      </div>
 
 
 
 
 
-
+      <section class="docflow-footer-section">
+          <footer id="docflow-footer" class="navbar-text">
+              <p id="footer-text">YET ANOTHER COPYRIGHT DATE TEST</p>
+          </footer>
+      </section>
+  
+      <script src="assets/javascript/app.js"></script>
 
 
 
