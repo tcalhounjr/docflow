@@ -68,8 +68,11 @@ function createProgram(title, desc) {
     return programKey;
 }
 
-function updateProgram() {
-
+function updateProgram(newStatement) {
+    updateMnsRef.set(newStatement);
+    updateConopsRef.set(newStatement);
+    updateAlternativesRef.set(newStatement);
+    updateRequirementsRef.set(newStatement);
 }
 
 function viewProgram() {
@@ -163,22 +166,10 @@ $(document).ready(function() {
         })
 
 
-        
-        modal.find(updateMnsHTML).val(action);
-        modal.find(updateConopsHTML).val(action);
-        modal.find(updateAlternativesHTML).val(action);
-        modal.find(updateRequirementsHTML).val(action);
-
-
         $(updateSubmitHTML).on('click', function(event) {
                     $('updateModal').modal('hide');
-
-
-                    var carDoc = modal.find(updateCarHTML).val();
-                    var programDesc = modal.find(programDescHTML).val();
-                    // console.log('the program name is ', programName);
-                    // console.log('the program description is ', programDesc);
-                    updateProgram(programName,programDesc);
+                    var update = modal.find(updateMnsHTML).val();
+                    updateProgram(update);
         });
 
     });
