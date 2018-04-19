@@ -40,12 +40,12 @@
     line-height: 3rem;
 }
 
-#modal-submit {
+.modal-submit {
     background-color: #9A1C2D;
     border-color: #9A1C2D;
 }
 
-#modal-close {
+.modal-close {
     background-color: #9C9C9C;
     border-color: #9c9c9c
 }
