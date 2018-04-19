@@ -72,7 +72,7 @@
                 Mauris volutpat, ante at porttitor dapibus, odio erat sagittis metus, et molestie velit metus a elit. Vestibulum 
                 vestibulum lacinia bibendum. Morbi libero quam, commodo vel dictum non, vulputate sit amet diam.
               </p>
-              <button id="create-program-btn" class="btn btn-primary landing-btns" data-toggle="modal" data-target="#programModal" data-whatever="create" type="submit">Create Program</button>
+              <button id="create-program-btn" class="btn btn-primary landing-btns" data-toggle="modal" data-target="#createModal" data-whatever="create" type="submit">Create Program</button>
             </div>
             <div id="create-program-image" class="col-sm-12 col-md-4">
               <img src="assets/images/add.png" alt="Smiley face" height="200" width="200">
@@ -90,7 +90,7 @@
                 Mauris volutpat, ante at porttitor dapibus, odio erat sagittis metus, et molestie velit metus a elit. Vestibulum 
                 vestibulum lacinia bibendum. Morbi libero quam, commodo vel dictum non, vulputate sit amet diam.
               </p>
-              <button id="update-program-btn" class="btn btn-primary landing-btns" data-toggle="modal" data-target="#programModal" data-whatever="update" type="submit">Update Program</button>
+              <button id="update-program-btn" class="btn btn-primary landing-btns" data-toggle="modal" data-target="#updateModal" data-whatever="update" type="submit">Update Program</button>
             </div>
           </div>
           <div id="third-row" class="row">
@@ -102,7 +102,7 @@
                   Mauris volutpat, ante at porttitor dapibus, odio erat sagittis metus, et molestie velit metus a elit. Vestibulum 
                   vestibulum lacinia bibendum. Morbi libero quam, commodo vel dictum non, vulputate sit amet diam.
                 </p>
-                <button id="view-program-btn" class="btn btn-primary landing-btns" data-toggle="modal" data-target="#programModal" data-whatever="view" type="submit">View Program</button>
+                <button id="view-program-btn" class="btn btn-primary landing-btns" data-toggle="modal" data-target="#programModal" data-whatever="View" type="submit">View Program</button>
               </div>
               <div id="create-program-image" class="col-sm-12 col-md-4">
                 <img src="assets/images/view.png" alt="Smiley face" height="180" width="180">
@@ -110,11 +110,11 @@
             </div>
       </div>
 
-      <div class="modal fade" id="programModal" tabindex="-1" role="dialog" aria-labelledby="programModalLabel" aria-hidden="true">
+      <div class="modal fade" id="createModal" tabindex="-1" role="dialog" aria-labelledby="createModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="programModalLabel">New message</h5>
+                <h5 class="modal-title" id="createModalLabel">Create Program</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
@@ -122,23 +122,63 @@
               <div class="modal-body">
                 <form>
                   <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Recipient:</label>
-                    <input type="text" class="form-control" id="recipient-name">
+                    <label for="recipient-name" class="col-form-label">Program Name:</label>
+                    <input type="text" class="form-control" id="program-name">
                   </div>
                   <div class="form-group">
-                    <label for="message-text" class="col-form-label">Message:</label>
-                    <textarea class="form-control" id="message-text"></textarea>
+                    <label for="message-text" class="col-form-label">Program Description:</label>
+                    <textarea class="form-control" id="program-description"></textarea>
                   </div>
                 </form>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary modal-submit">Submit</button>
+                <button id="create-modal-close" type="button" class="btn btn-secondary modal-close" data-dismiss="modal">Close</button>
+                <button id="create-modal-submit" type="button" class="btn btn-primary modal-submit">Submit</button>
               </div>
             </div>
           </div>
         </div>
 
+        <div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="updateModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="updateModalLabel">Update Program</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Capability Gaps List:</label>
+                      <textarea class="form-control" id="update-capabilities"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label">Mission Needs:</label>
+                      <textarea class="form-control" id="update-mission-needs"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">CONOPS:</label>
+                        <textarea class="form-control" id="update-conops"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Analysis of Alternatives:</label>
+                        <textarea class="form-control" id="update-alternatives"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Operational Requirements Document:</label>
+                        <textarea class="form-control" id="update-requirements"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button id="update-modal-close" type="button" class="btn btn-secondary modal-close" data-dismiss="modal">Close</button>
+                  <button id="update-modal-submit" type="button" class="btn btn-primary modal-submit">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
       <div class="container">
         <div class="row">
