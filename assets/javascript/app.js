@@ -129,7 +129,11 @@ $(document).ready(function() {
                     // console.log('the program description is ', programDesc);
                     createProgram(programName,programDesc);
                     programTitle = programName;
-                    updateCarRef = database.ref(programTitle + '/capabilities/report');
+                    updateCarRef = database.ref(programTitle + '/capabilities/report/conclusion');
+                    updateMnsRef = database.ref(programTitle + '/missionNeeds/mission/statement');
+                    updateConopsRef = database.ref(programTitle + '/conops/conop/statement');
+                    updateAlternativesRef = database.ref(programTitle + '/alternatives/aOfA/statement');
+                    updateRequirementsRef = database.ref(programTitle + '/requirements/ord/statement');
         });
     });
 
