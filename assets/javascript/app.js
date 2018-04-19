@@ -49,7 +49,7 @@ function initializeDatabase() {
 
 function createProgram(title, desc) {
     var program = new Program(title, desc);
-    database.ref().set(program);
+    database.ref().update(program);
     // console.log('this is the program key ', key);
 
     var report = new CapabilitiesAssessmentReport(gaps, bottomLIne, rationale);
